@@ -94,6 +94,8 @@ class AjaxController extends Controller
                 'email' => $req->mail,
                 'tel' => '未設定',
                 'password' => password_hash($req->password, PASSWORD_DEFAULT),
+                'publish_email' => 1,
+                'publish_tel' => 1,
                 'created_at' => date("Y/m/d G:i:s"),
                 'updated_at' => date("Y/m/d G:i:s")
             ]);
