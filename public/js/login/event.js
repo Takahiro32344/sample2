@@ -197,6 +197,8 @@ $('.btn-login').on('click', function() {
                         $('.alert').text('メールを送信しました');
                     else
                         $('.alert').text('メールを送信できませんでした');
+
+                    $('.regist-email').val('');
                     click = 0;
                 });
             } else {
