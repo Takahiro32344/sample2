@@ -205,7 +205,7 @@ $('.btn-login').on('click', function() {
                 else if ($('.regist-email').val().length > 50)
                     $('.alert').text('制限字数を超えております');
                 else if (!$('.regist-email').val().match(/^[a-zA-Z0-9\d!?_+*'"`#$%&\-^\\@;:,./=~|[\](){}<>]+$/))
-                    $('.alert').text('無効な文字が含まれております');
+                    $('.alert').text('無効の文字が含まれております');
                 else if (!($('.regist-email').val().match(/^[A-Za-z0-9.]+[\w-]+@[\w\.-]+\.\w{2,}$/)))
                     $('.alert').text('入力形式が正しくありません');
             }
