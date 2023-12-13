@@ -56,7 +56,7 @@ function validate() {
     } else if ($('.id-name').val().length > 50) {
         $('.alert-id-name').text('制限字数を超えております').css({'margin-top': margin_top_alert, 'margin-bottom': margin_bottom_alert, 'font-size': font_size});
     } else if (!$('.id-name').val().match(/^[a-zA-Z0-9\d!?_+*'"`#$%&\-^\\@;:,./=~|[\](){}<>]+$/)) {
-        $('.alert-id-name').text('無効な文字が含まれております').css({'margin-top': margin_top_alert, 'margin-bottom': margin_bottom_alert, 'font-size': font_size});
+        $('.alert-id-name').text('無効の文字が含まれております').css({'margin-top': margin_top_alert, 'margin-bottom': margin_bottom_alert, 'font-size': font_size});
     } else {
         $('.alert-id-name').text('').css({'margin-top':'0', 'margin-bottom':'0', 'font-size': '0'});
     }
@@ -67,7 +67,7 @@ function validate() {
     } else if ($('.mail').val().length > 50) {
         $('.alert-mail').text('制限字数を超えております').css({'margin-top': margin_top_alert, 'margin-bottom': margin_bottom_alert, 'font-size': font_size});
     } else if (!$('.mail').val().match(/^[a-zA-Z0-9\d!?_+*'"`#$%&\-^\\@;:,./=~|[\](){}<>]+$/)) {
-        $('.alert-mail').text('無効な文字が含まれております').css({'margin-top': margin_top_alert, 'margin-bottom': margin_bottom_alert, 'font-size': font_size});
+        $('.alert-mail').text('無効の文字が含まれております').css({'margin-top': margin_top_alert, 'margin-bottom': margin_bottom_alert, 'font-size': font_size});
     } else if (!($('.mail').val().match(/^[A-Za-z0-9.]+[\w-]+@[\w\.-]+\.\w{2,}$/))) {
         $('.alert-mail').text('入力形式が正しくありません').css({'margin-top': margin_top_alert, 'margin-bottom': margin_bottom_alert, 'font-size': font_size});
     } else {
@@ -80,7 +80,7 @@ function validate() {
     } else if (!($('.password').val().length >= 8 && $('.password').val().length <= 50)) {
         $('.alert-password').text('制限字数外です').css({'margin-top': margin_top_alert, 'margin-bottom': margin_bottom_alert, 'font-size': font_size});
     } else if (!$('.password').val().match(/^[a-zA-Z0-9\d!?_+*'"`#$%&\-^\\@;:,./=~|[\](){}<>]+$/)) {
-        $('.alert-password').text('無効な文字が含まれております').css({'margin-top': margin_top_alert, 'margin-bottom': margin_bottom_alert, 'font-size': font_size});
+        $('.alert-password').text('無効の文字が含まれております').css({'margin-top': margin_top_alert, 'margin-bottom': margin_bottom_alert, 'font-size': font_size});
     } else if ($('.password').val() != $('.password-retype').val()) {
         $('.alert-password').text('確認用と不一致').css({'margin-top': margin_top_alert, 'margin-bottom': margin_bottom_alert, 'font-size': font_size});
     } else {
@@ -93,7 +93,7 @@ function validate() {
     } else if (!($('.password-retype').val().length >= 8 && $('.password-retype').val().length <= 50)) {
         $('.alert-password-retype').text('制限字数外です').css({'margin-top': margin_top_alert, 'margin-bottom': margin_bottom_alert, 'font-size': font_size});
     } else if (!$('.password-retype').val().match(/^[a-zA-Z0-9\d!?_+*'"`#$%&\-^\\@;:,./=~|[\](){}<>]+$/)) {
-        $('.alert-password-retype').text('無効な文字が含まれております').css({'margin-top': margin_top_alert, 'margin-bottom': margin_bottom_alert, 'font-size': font_size});
+        $('.alert-password-retype').text('無効の文字が含まれております').css({'margin-top': margin_top_alert, 'margin-bottom': margin_bottom_alert, 'font-size': font_size});
     } else {
         $('.alert-password-retype').text('').css({'margin-top':'0', 'margin-bottom':'0', 'font-size': '0'});
     }
@@ -175,7 +175,7 @@ function validate_realtime() {
         $('.alert-id-name').text('制限字数を超えております').css({'margin-top': margin_top_alert, 'margin-bottom': margin_bottom_alert, 'font-size': font_size});
         flg[7] = 0;
     } else if (!$('.id-name').val().match(/^[a-zA-Z0-9\d!?_+*'"`#$%&\-^\\@;:,./=~|[\](){}<>]+$/)) {
-        $('.alert-id-name').text('無効な文字が含まれております').css({'margin-top': margin_top_alert, 'margin-bottom': margin_bottom_alert, 'font-size': font_size});
+        $('.alert-id-name').text('無効の文字が含まれております').css({'margin-top': margin_top_alert, 'margin-bottom': margin_bottom_alert, 'font-size': font_size});
         flg[7] = 0;
     } else {
         $('.alert-id-name').text('').css({'margin-top':'0', 'margin-bottom':'0', 'font-size': '0'});
@@ -190,7 +190,7 @@ function validate_realtime() {
         $('.alert-mail').text('制限字数を超えております').css({'margin-top': margin_top_alert, 'margin-bottom': margin_bottom_alert, 'font-size': font_size});
         flg[8] = 0;
     } else if (!$('.mail').val().match(/^[a-zA-Z0-9\d!?_+*'"`#$%&\-^\\@;:,./=~|[\](){}<>]+$/)) {
-        $('.alert-mail').text('無効な文字が含まれております').css({'margin-top': margin_top_alert, 'margin-bottom': margin_bottom_alert, 'font-size': font_size});
+        $('.alert-mail').text('無効の文字が含まれております').css({'margin-top': margin_top_alert, 'margin-bottom': margin_bottom_alert, 'font-size': font_size});
         flg[8] = 0;
     } else if (!($('.mail').val().match(/^[A-Za-z0-9.]+[\w-]+@[\w\.-]+\.\w{2,}$/))) {
         $('.alert-mail').text('入力形式が正しくありません').css({'margin-top': margin_top_alert, 'margin-bottom': margin_bottom_alert, 'font-size': font_size});
@@ -208,7 +208,7 @@ function validate_realtime() {
         $('.alert-password').text('制限字数外です').css({'margin-top': margin_top_alert, 'margin-bottom': margin_bottom_alert, 'font-size': font_size});
         flg[9] = 0;
     } else if (!$('.password').val().match(/^[a-zA-Z0-9\d!?_+*'"`#$%&\-^\\@;:,./=~|[\](){}<>]+$/)) {
-        $('.alert-password').text('無効な文字が含まれております').css({'margin-top': margin_top_alert, 'margin-bottom': margin_bottom_alert, 'font-size': font_size});
+        $('.alert-password').text('無効の文字が含まれております').css({'margin-top': margin_top_alert, 'margin-bottom': margin_bottom_alert, 'font-size': font_size});
         flg[9] = 0;
     } else if ($('.password').val() != $('.password-retype').val()) {
         $('.alert-password').text('確認用と不一致').css({'margin-top': margin_top_alert, 'margin-bottom': margin_bottom_alert, 'font-size': font_size});
@@ -226,7 +226,7 @@ function validate_realtime() {
         $('.alert-password-retype').text('制限字数外です').css({'margin-top': margin_top_alert, 'margin-bottom': margin_bottom_alert, 'font-size': font_size});
         flg[10] = 0;
     } else if (!$('.password-retype').val().match(/^[a-zA-Z0-9\d!?_+*'"`#$%&\-^\\@;:,./=~|[\](){}<>]+$/)) {
-        $('.alert-password-retype').text('無効な文字が含まれております').css({'margin-top': margin_top_alert, 'margin-bottom': margin_bottom_alert, 'font-size': font_size});
+        $('.alert-password-retype').text('無効の文字が含まれております').css({'margin-top': margin_top_alert, 'margin-bottom': margin_bottom_alert, 'font-size': font_size});
         flg[10] = 0;
     } else {
         $('.alert-password-retype').text('').css({'margin-top':'0', 'margin-bottom':'0', 'font-size': '0'});
