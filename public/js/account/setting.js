@@ -368,7 +368,7 @@ if ($('.view-mode').val() == 3) {
             else if ($('.edit-email').val().length > 50)
                 $('.alert-email').text('制限字数を超えております');
             else if (!$('.edit-email').val().match(/^[a-zA-Z0-9\d!?_+*'"`#$%&\-^\\@;:,./=~|[\](){}<>]+$/))
-                $('.alert-email').text('無効な文字が含まれております');
+                $('.alert-email').text('無効の文字が含まれております');
             else if (!($('.edit-email').val().match(/^[A-Za-z0-9.]+[\w-]+@[\w\.-]+\.\w{2,}$/)))
                 $('.alert-email').text('入力形式が正しくありません');
         }
@@ -405,7 +405,7 @@ if ($('.view-mode').val() == 3) {
             else if ($('.edit-tel').val().length != 11)
                 $('.alert-tel').text('11桁入力してください');
             else if (!($('.edit-tel').val().match(/^[0-9]+$/)))
-                $('.alert-tel').text('無効な文字が含まれております');
+                $('.alert-tel').text('無効の文字が含まれております');
             else if (!($('.edit-tel').val().match(/^[0]+[57-9]+[0]+[0-9]{8}$/)))
                 $('.alert-tel').text('入力形式が正しくありません');
         }
@@ -586,7 +586,7 @@ if ($('.view-mode').val() == 3) {
                 $('.alert-email').text('制限字数を超えております');
                 update[3] = 0;
             } else if (!$('.edit-email').val().match(/^[a-zA-Z0-9\d!?_+*'"`#$%&\-^\\@;:,./=~|[\](){}<>]+$/)) {
-                $('.alert-email').text('無効な文字が含まれております');
+                $('.alert-email').text('無効の文字が含まれております');
                 update[3] = 0;
             } else if (!($('.edit-email').val().match(/^[A-Za-z0-9.]+[\w-]+@[\w\.-]+\.\w{2,}$/))) {
                 $('.alert-email').text('入力形式が正しくありません');
@@ -606,7 +606,7 @@ if ($('.view-mode').val() == 3) {
                 $('.alert-tel').text('11桁入力してください');
                 update[4] = 0;
             } else if (!($('.edit-tel').val().match(/^[0-9]+$/))) {
-                $('.alert-tel').text('無効な文字が含まれております');
+                $('.alert-tel').text('無効の文字が含まれております');
                 update[4] = 0;
             } else if (!($('.edit-tel').val().match(/^[0]+[57-9]+[0]+[0-9]{8}$/))) {
                 $('.alert-tel').text('入力形式が正しくありません');
@@ -741,7 +741,7 @@ if ($('.view-mode').val() == 4) {
             else if (!($('.password').val().length >= 8 && $('.password').val().length <= 50))
                 $('.alert-password').text('制限字数外');
             else if (!$('.password').val().match(/^[a-zA-Z0-9\d!?_+*'"`#$%&\-^\\@;:,./=~|[\](){}<>]+$/))
-                $('.alert-password').text('無効な文字が含まれております');
+                $('.alert-password').text('無効の文字が含まれております');
             else if ($('.password').val() != $('.password-retype').val())
                 $('.alert-password').text('確認用と不一致');
             else
@@ -752,7 +752,7 @@ if ($('.view-mode').val() == 4) {
             else if (!($('.password-retype').val().length >= 8 && $('.password-retype').val().length <= 50))
                 $('.alert-password-retype').text('制限字数外');
             else if (!$('.password-retype').val().match(/^[a-zA-Z0-9\d!?_+*'"`#$%&\-^\\@;:,./=~|[\](){}<>]+$/))
-                $('.alert-password-retype').text('無効な文字が含まれております');
+                $('.alert-password-retype').text('無効の文字が含まれております');
             else
                 $('.alert-password-retype').text('');
         }
@@ -768,7 +768,7 @@ if ($('.view-mode').val() == 4) {
                 $('.alert-password').text('制限字数外');
                 check[0] = 0;
             } else if (!$('.password').val().match(/^[a-zA-Z0-9\d!?_+*'"`#$%&\-^\\@;:,./=~|[\](){}<>]+$/)) {
-                $('.alert-password').text('無効な文字が含まれております');
+                $('.alert-password').text('無効の文字が含まれております');
                 check[0] = 0;
             } else if ($('.password').val() != $('.password-retype').val()) {
                 $('.alert-password').text('確認用と不一致');
@@ -785,7 +785,7 @@ if ($('.view-mode').val() == 4) {
                 $('.alert-password-retype').text('制限字数外');
                 check[1] = 0;
             } else if (!$('.password-retype').val().match(/^[a-zA-Z0-9\d!?_+*'"`#$%&\-^\\@;:,./=~|[\](){}<>]+$/)) {
-                $('.alert-password-retype').text('無効な文字が含まれております');
+                $('.alert-password-retype').text('無効の文字が含まれております');
                 check[1] = 0;
             } else {
                 $('.alert-password-retype').text('');
