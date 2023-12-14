@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['prefix' => 'account', 'as' => 'account.'], function() {
+Route::group(['prefix' => 'Laravel-1', 'as' => 'account.'], function() {
     Route::get('/', 'App\Http\Controllers\AccountController@root')->name('root');
     Route::post('/', 'App\Http\Controllers\AccountController@root')->name('root');
 });
